@@ -72,33 +72,36 @@ st.markdown("""
         }
     }
     
-    /* Source chunk highlight */
-    .source-chunk {
-        background: linear-gradient(135deg, #fff9e6 0%, #fff3cd 100%);
-        border-left: 4px solid #ffc107;
-        padding: 1rem;
-        border-radius: 0.5rem;
-        margin: 0.5rem 0;
-        font-size: 0.9rem;
-        line-height: 1.6;
-        overflow-x: auto;
-        word-wrap: break-word;
-    }
-    
-    /* Source reference badge */
-    .source-badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        background: #e3f2fd;
-        color: #1565c0;
-        padding: 0.25rem 0.75rem;
-        border-radius: 1rem;
-        font-size: 0.85rem;
-        font-weight: 600;
-        margin: 0.25rem;
-    }
-    
+.source-chunk {
+    background: #f8f9fa; /* Very light neutral gray */
+    border-left: 4px solid #0d6efd; /* Strong primary blue accent */
+    border: 1px solid #dee2e6;
+    border-left: 4px solid #0d6efd;
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+    margin: 1rem 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #212529; /* Dark gray/black text for maximum readability */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    word-wrap: break-word;
+}
+
+/* Source reference badge - Subtle and clean */
+.source-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #e7f1ff; /* Light blue tint */
+    color: #0a58ca; /* Deep blue text */
+    padding: 0.35rem 0.85rem;
+    border-radius: 6px; /* Slightly more modern than full pill */
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border: 1px solid #cfe2ff;
+}
+
     /* PDF viewer container */
     .pdf-container {
         border: 1px solid #dee2e6;
@@ -594,3 +597,4 @@ def render_pdf_section(pdf_path: str):
 
 if __name__ == "__main__":
     main()
+

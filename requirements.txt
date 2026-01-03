@@ -1,0 +1,18 @@
+# Core
+streamlit>=1.31.0
+python-dotenv>=1.0.0
+
+# PDF processing
+pypdf>=4.0.0
+
+# Supabase
+supabase>=2.3.0
+
+# Google Gemini
+google-genai>=0.3.0
+
+# PDF rendering and highlighting
+PyMuPDF>=1.23.0
+
+# Utilities
+numpy>=1.26.0
